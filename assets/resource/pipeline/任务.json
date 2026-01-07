@@ -96,6 +96,7 @@
         ]
       }
     },
+    "post_wait_freezes": 1000,
     "action": {
       "type": "Click",
       "param": {}
@@ -106,7 +107,8 @@
         "x": 1800,
         "y": 397
       }
-    }
+    },
+    "next":["获得资源"]
   },
   "每周任务": {
     "recognition": {

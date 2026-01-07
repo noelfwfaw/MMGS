@@ -778,7 +778,13 @@
     "recognition": {
       "type": "TemplateMatch",
       "param": {
-        "template": "扫荡MAX.png"
+        "template": "扫荡MAX.png",
+        "roi": [
+      676,
+      189,
+      172,
+      88
+    ]
       }
     },
     "action": {
@@ -787,12 +793,6 @@
     },
     "post_wait_freezes": 1000,
     "focus": "[color:green]核心扫荡max[/color]",
-    "recommended roi": [
-      718,
-      210,
-      124,
-      56
-    ],
     "$__mpe_code": {
       "position": {
         "x": 1500,
