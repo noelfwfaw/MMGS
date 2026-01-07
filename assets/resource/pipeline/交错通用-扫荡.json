@@ -249,7 +249,7 @@
       "type": "OCR"
     }
   },
-  "扫荡": {
+  "交错扫荡": {
     "$__mpe_code": {
       "position": {
         "x": 3000,
@@ -447,7 +447,7 @@
     },
     "focus": "[color:green]扫荡结束[/color]",
     "next": [
-      "扫荡"
+      "交错扫荡"
     ],
     "recognition": {
       "param": {

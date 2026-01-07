@@ -156,7 +156,7 @@
     },
     "focus": "[color:green]每日探索[/color]",
     "next": [
-      "扫荡"
+      "交错扫荡"
     ],
     "pre_wait_freezes": {
       "threshold": 0.95,
