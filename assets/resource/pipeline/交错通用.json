@@ -394,7 +394,7 @@
       "param": {},
       "type": "Click"
     },
-    "focus": "[color:green]出击[/color]",
+    "focus": "[color:green]活动探索-首页-出击[/color]",
     "next": [
       "进入活动探索界面"
     ],
@@ -617,7 +617,7 @@
       "param": {},
       "type": "Click"
     },
-    "focus": "[color:green]出击[/color]",
+    "focus": "[color:green]首页_出击[/color]",
     "next_doc": "Set in code.",
     "recognition": {
       "param": {
