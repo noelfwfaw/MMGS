@@ -4,7 +4,7 @@
     "description": "基于MaaFramework的多游戏混合脚本",
     "license": "MIT",
     "welcome": "欢迎使用 MaaGame!",
-    "github": "https://github.com/noelfwfaw/MaaGame.git",
+    "github": "https://github.com/noelfwfaw/MaaGame",
     "version": "0.0.1",
     "controller": [
         {
