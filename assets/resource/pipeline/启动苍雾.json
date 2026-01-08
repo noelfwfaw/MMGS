@@ -258,15 +258,10 @@
   },
   "签到": {
     "recognition": {
-      "type": "TemplateMatch",
+      "type": "OCR",
       "param": {
-        "roi": [
-          1043,
-          593,
-          232,
-          70
-        ],
-        "template": "签到.png"
+        "expected" : "点击签到",
+        "roi" : [1092,601,144,50]
       }
     },
     "action": {
@@ -343,7 +338,7 @@
       }
     },
     "next": [
-      "登陆"
+      "已签到"
     ],
     "on_error": [
       "error"

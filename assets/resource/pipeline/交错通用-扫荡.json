@@ -366,12 +366,7 @@
     "recognition": {
       "param": {
         "expected": "扫荡",
-        "roi": [
-          5,
-          2,
-          530,
-          155
-        ]
+        "roi" : [585,9,77,54]
       },
       "type": "OCR"
     }
@@ -399,12 +394,7 @@
     "recognition": {
       "param": {
         "expected": "扫荡",
-        "roi": [
-          5,
-          2,
-          530,
-          155
-        ]
+        "roi" : [585,9,77,54]
       },
       "type": "OCR"
     }
