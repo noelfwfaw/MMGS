@@ -10,12 +10,12 @@
         "recognition": {
             "type": "TemplateMatch",
             "param": {
-                "template": "Chaos/E9打开菜单.png",
+                "template": "Chaos/E9菜单.png",
                 "roi": [
+                    1159,
                     0,
-                    0,
-                    147,
-                    137
+                    121,
+                    139
                 ]
             }
         },
@@ -31,12 +31,12 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": "日常任务",
+                "expected": "日常",
                 "roi": [
-                    1056,
-                    39,
-                    171,
-                    141
+                    962,
+                    134,
+                    138,
+                    61
                 ]
             }
         },
@@ -53,10 +53,10 @@
             "param": {
                 "expected": "全部領取",
                 "roi": [
-                    1056,
-                    39,
-                    171,
-                    141
+                    219,
+                    546,
+                    130,
+                    53
                 ]
             }
         },
@@ -64,10 +64,10 @@
             "type": "Click"
         },
         "repeat": 3,
-        "repeat_delay": 500,
+        "repeat_delay": 1000,
         "next": [
-            "[JumpBack]E9关闭",
-            "E9主页面"
+            "E9主页面",
+            "[JumpBack]E9激活主页面"
         ]
     }
 }

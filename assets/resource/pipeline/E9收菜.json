@@ -53,9 +53,139 @@
         },
         "post_delay": 3000,
         "next": [
+            "[JumpBack]E9政策完成",
             "E9无政策",
             "[JumpBack]E9讨论政策"
         ]
+    },
+    "E9政策完成": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Chaos/E9政策完成.png",
+                "roi": [
+                    0,
+                    0,
+                    147,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "E9重进政策室",
+            "E9政策完成"
+        ]
+    },
+    "E9重进政策室": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "政策室",
+                "roi": [
+                    197,
+                    597,
+                    168,
+                    123
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 3000,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "E9选择新政策"
+        ]
+    },
+    "E9选择新政策": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "作目標",
+                "roi": [
+                    165,
+                    602,
+                    195,
+                    118
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    571,
+                    354,
+                    100,
+                    124
+                ]
+            }
+        },
+        "next": [
+            "E9政策确认",
+            "E9选择新政策"
+        ]
+    },
+    "E9政策确认": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "E9政策确认.png",
+                "roi": [
+                    823,
+                    597,
+                    454,
+                    123
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动配置"
+        ]
+    },
+    "自动配置": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "自動",
+                "roi": [
+                    654,
+                    602,
+                    209,
+                    118
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "自动配置完成"
+        ]
+    },
+    "自动配置完成": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Chaos/自动配置完成.png",
+                "roi": [
+                    1015,
+                    600,
+                    259,
+                    120
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
     },
     "E9无政策": {
         "recognition": {
@@ -157,8 +287,69 @@
             "type": "Click"
         },
         "next": [
+            "无法点餐",
+            "内用"
+        ]
+    },
+    "内用": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "内用",
+                "roi": [
+                    725,
+                    126,
+                    157,
+                    137
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "点击点餐"
+        ]
+    },
+    "点击点餐": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Chaos/点餐.png",
+                "roi": [
+                    797,
+                    557,
+                    300,
+                    152
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
             "E9主页面",
-            "[JumpBack]E9返回"
+            "[JumpBack]E9返回",
+            "[JumpBack]E9激活主页面"
+        ]
+    },
+    "无法点餐": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "Chaos/无法点餐.png",
+                "roi": [
+                    895,
+                    563,
+                    385,
+                    157
+                ]
+            }
+        },
+        "next": [
+            "E9主页面",
+            "[JumpBack]E9返回",
+            "[JumpBack]E9激活主页面"
         ]
     }
 }
