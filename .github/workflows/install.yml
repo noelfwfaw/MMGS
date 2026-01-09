@@ -132,21 +132,61 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate simple changelog from commits
+      - name: Generate comprehensive changelog from commits
         id: generate-changelog
         run: |
-          # 查找上一个发布标签（排除ci标签）
-          PREV_TAG=$(git tag --list "v*" --sort=-version:refname | grep -v ci | head -n 1)
+          # 获取当前标签
+          CURRENT_TAG="${{ github.ref_name }}"
+          
+          # 查找上一个正式发布标签（排除ci标签）
+          PREV_TAG=$(git tag --list "v*" --sort=-version:refname | grep -v ci | head -n 2 | tail -n 1)
           
           echo "## What's Changed" > changelog.md
           
-          if [[ -n "$PREV_TAG" ]]; then
-            # 获取两个标签之间的提交
-            git log --oneline --format="- %s by @%an" ${PREV_TAG}..HEAD >> changelog.md
+          if [[ -n "$PREV_TAG" && "$PREV_TAG" != "$CURRENT_TAG" ]]; then
+            # 获取两个标签之间的所有提交
+            echo "### Commits" >> changelog.md
+            echo "" >> changelog.md
+            
+            # 获取详细的提交信息
+            git log --pretty=format:"- **%h** - %s%n  > by @%an on %ad" --date=short ${PREV_TAG}..HEAD >> changelog.md
+            echo "" >> changelog.md
+            
+            # 获取贡献者列表
+            echo "### Contributors" >> changelog.md
+            echo "" >> changelog.md
+            
+            # 去重获取贡献者
+            CONTRIBUTORS=$(git log --pretty=format:"@%an" ${PREV_TAG}..HEAD | sort -u | tr '\n' ' ')
+            echo "Thanks to all contributors: $CONTRIBUTORS" >> changelog.md
+            echo "" >> changelog.md
+            
+            # 统计提交数量
+            COMMIT_COUNT=$(git rev-list --count ${PREV_TAG}..HEAD)
+            echo "**Total commits since $PREV_TAG: $COMMIT_COUNT**" >> changelog.md
+            
           else
-            # 首次发布，获取所有提交
-            git log --oneline --format="- %s by @%an" --all >> changelog.md
+            # 首次发布或没有找到上一个标签
+            echo "### All Commits" >> changelog.md
+            echo "" >> changelog.md
+            
+            # 获取所有提交
+            git log --pretty=format:"- **%h** - %s%n  > by @%an on %ad" --date=short --all >> changelog.md
+            echo "" >> changelog.md
+            
+            # 获取所有贡献者
+            echo "### Contributors" >> changelog.md
+            echo "" >> changelog.md
+            
+            CONTRIBUTORS=$(git log --pretty=format:"@%an" --all | sort -u | tr '\n' ' ')
+            echo "Thanks to all contributors: $CONTRIBUTORS" >> changelog.md
           fi
+          
+          # 添加分隔线
+          echo "" >> changelog.md
+          echo "---" >> changelog.md
+          echo "" >> changelog.md
+          echo "*Changelog automatically generated from git commits*" >> changelog.md
           
           # 输出内容
           content=$(cat changelog.md)
