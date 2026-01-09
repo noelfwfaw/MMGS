@@ -10,7 +10,7 @@
         {
             "name": "安卓端",
             "type": "Adb",
-            "display_short_side": 720 
+            "display_short_side": 720
         }
     ],
     "resource": [
@@ -28,143 +28,143 @@
         ]
     },
     "task": [
-      {
-        "name": "启动苍雾",
-        "entry": "初始化"
-      },
-      {
-        "name": "指挥室",
-        "entry": "指挥室"
-      },
-      {
-        "name": "好友点赞",
-        "entry": "好友点赞"
-      },
-      {
-        "name": "苍雾绿币",
-        "entry": "苍雾绿币"
-      },
-      {
-        "name": "演习",
-        "entry": "演习"
-      },
-      {
-        "name": "苍雾世界日常",
-        "entry": "苍雾世界日常",
-        "doc": "选择每天要打的日常副本",  
-        "option":[
-          "星期一",
-          "星期二",
-          "星期三",
-          "星期四",
-          "星期五",
-          "星期六",
-          "星期日"
-        ]
-      },
-      {
-        "name": "活动",
-        "entry": "活动"
-      },
-      {
-        "name": "刷核心",
-        "entry": "刷核心",
-        "option":[
-          "核心选项"
-        ]
-      },
-      {
-        "name": "任务",
-        "entry": "任务"
-      },
-      {
-        "name": "通行证",
-        "entry": "通行证"
-      },
-      {
-        "name": "关闭苍雾",
-        "entry": "关闭苍雾"
-      },
-      {
-        "name": "启动失落之剑",
-        "entry": "启动失落之剑"
-      },
-      {
-        "name": "宝藏探索",
-        "entry": "宝藏探索"
-      },
-      {
-        "name": "失落之剑每日抽卡",
-        "entry": "失落之剑每日抽卡"
-      },
-      {
-        "name": "失落之剑商店",
-        "entry": "失落之剑商店"
-      },
-      {
-        "name": "讨伐",
-        "entry": "讨伐"
-      },
-      {
-        "name": "经验书扫荡",
-        "entry": "经验书扫荡"
-      },
-      {
-        "name": "队伍讨伐",
-        "entry": "队伍讨伐"
-      },
-      {
-        "name":"失落之剑竞技场",
-        "entry":"失落之剑竞技场"
-      },
-      {
-        "name": "失落之剑任务",
-        "entry": "失落之剑任务"
-      },
-      {
-        "name": "失落之剑通行证",
-        "entry": "失落之剑通行证"
-      },
-      {
-        "name": "失落之剑活动",
-        "entry": "失落之剑活动"
-      },
-      {
-        "name": "关闭失落之剑",
-        "entry": "关闭失落之剑"
-      },
-      {
-        "name": "启动棕色尘埃",
-        "entry": "启动棕色尘埃"
-      },
-      {
-        "name": "抽抽乐",
-        "entry": "抽抽乐"
-      },
-      {
-        "name": "日常扫荡",
-        "entry": "日常扫荡",
-        "option":[
-          "圣石选择"
-        ]
-      },
-      {
-        "name": "棕色尘埃活动",
-        "entry": "棕色尘埃活动"
-      },
-      {
-        "name": "棕色尘埃任务",
-        "entry": "棕色尘埃任务"
-      },
-      {
-        "name": "棕色尘埃通行证",
-        "entry": "棕色尘埃通行证"
-      },
-      {
-        "name": "关闭棕色尘埃",
-        "entry": "关闭棕色尘埃"
-      },
-      {
+        {
+            "name": "启动苍雾",
+            "entry": "初始化"
+        },
+        {
+            "name": "指挥室",
+            "entry": "指挥室"
+        },
+        {
+            "name": "好友点赞",
+            "entry": "好友点赞"
+        },
+        {
+            "name": "苍雾绿币",
+            "entry": "苍雾绿币"
+        },
+        {
+            "name": "演习",
+            "entry": "演习"
+        },
+        {
+            "name": "苍雾世界日常",
+            "entry": "苍雾世界日常",
+            "doc": "选择每天要打的日常副本",
+            "option": [
+                "星期一",
+                "星期二",
+                "星期三",
+                "星期四",
+                "星期五",
+                "星期六",
+                "星期日"
+            ]
+        },
+        {
+            "name": "活动",
+            "entry": "活动"
+        },
+        {
+            "name": "刷核心",
+            "entry": "刷核心",
+            "option": [
+                "核心选项"
+            ]
+        },
+        {
+            "name": "任务",
+            "entry": "任务"
+        },
+        {
+            "name": "通行证",
+            "entry": "通行证"
+        },
+        {
+            "name": "关闭苍雾",
+            "entry": "关闭苍雾"
+        },
+        {
+            "name": "启动失落之剑",
+            "entry": "启动失落之剑"
+        },
+        {
+            "name": "宝藏探索",
+            "entry": "宝藏探索"
+        },
+        {
+            "name": "失落之剑每日抽卡",
+            "entry": "失落之剑每日抽卡"
+        },
+        {
+            "name": "失落之剑商店",
+            "entry": "失落之剑商店"
+        },
+        {
+            "name": "讨伐",
+            "entry": "讨伐"
+        },
+        {
+            "name": "经验书扫荡",
+            "entry": "经验书扫荡"
+        },
+        {
+            "name": "队伍讨伐",
+            "entry": "队伍讨伐"
+        },
+        {
+            "name": "失落之剑竞技场",
+            "entry": "失落之剑竞技场"
+        },
+        {
+            "name": "失落之剑任务",
+            "entry": "失落之剑任务"
+        },
+        {
+            "name": "失落之剑通行证",
+            "entry": "失落之剑通行证"
+        },
+        {
+            "name": "失落之剑活动",
+            "entry": "失落之剑活动"
+        },
+        {
+            "name": "关闭失落之剑",
+            "entry": "关闭失落之剑"
+        },
+        {
+            "name": "启动棕色尘埃",
+            "entry": "启动棕色尘埃"
+        },
+        {
+            "name": "抽抽乐",
+            "entry": "抽抽乐"
+        },
+        {
+            "name": "日常扫荡",
+            "entry": "日常扫荡",
+            "option": [
+                "圣石选择"
+            ]
+        },
+        {
+            "name": "棕色尘埃活动",
+            "entry": "棕色尘埃活动"
+        },
+        {
+            "name": "棕色尘埃任务",
+            "entry": "棕色尘埃任务"
+        },
+        {
+            "name": "棕色尘埃通行证",
+            "entry": "棕色尘埃通行证"
+        },
+        {
+            "name": "关闭棕色尘埃",
+            "entry": "关闭棕色尘埃"
+        },
+        {
             "name": "交错启动游戏",
             "entry": "进入首页",
             "check": true,
@@ -205,9 +205,10 @@
         {
             "name": "交错基建",
             "entry": "Infrastructures",
-            "doc": "可能会有bug",
+            "doc": "可能会有bug，资源短缺时会自动补充黑匣，如果原型已经见底了，建议关闭自动补充黑匣",
             "option": [
-                "是否访问每个好友换抽"
+                "是否访问每个好友换抽",
+                "是否自动补充黑匣"
             ]
         },
         {
@@ -257,251 +258,322 @@
                 "是否打挑战难度",
                 "挑战难度选择"
             ]
+        },
+        {
+            "name": "E9启动游戏",
+            "entry": "启动E9"
+        },
+        {
+            "name": "E9收菜",
+            "entry": "E9收菜",
+            "doc": "方舟政策（只选右），咖啡"
+        },
+        {
+            "name": "E9模拟",
+            "entry": "E9模拟",
+            "option": [
+                "模拟选择",
+                "成长",
+                "战斗员",
+                "伙伴",
+                "潜力",
+                "记忆碎片"
+            ]
         }
     ],
-    "option":{
-      "核心选项":{
-        "cases":[
-          {
-            "name":"生命核心",
-            "pipeline_override":{
-              "核心制造":{
-                "next":["生命核心"]
-              }
-            }
-          },
-          {
-            "name":"攻击核心",
-            "pipeline_override":{
-              "核心制造":{
-                "next":["攻击核心"]
-              }
-            }
-          }
-        ]
-      },
-      "星期一":{
-        "cases":[
-          {
-            "name":"活动",
-            "pipeline_override":{
-              "星期一计划":{
-                "next":["活动"]
-              }
-            }
-          },
-          {
-            "name":"核心制造:生命核心",
-            "pipeline_override":{
-              "星期一核心制造":{
-                "next":["生命核心"]
-              },
-              "星期一计划":{
-                "next":["星期一刷核心"]
-              }
-            }
-          }
-        ]
-      },
-      "星期二":{
-        "cases":[
-          {
-            "name":"活动",
-            "pipeline_override":{
-              "星期二计划":{
-                "next":["活动"]
-              }
-            }
-          },
-          {
-            "name":"核心制造:攻击核心",
-            "pipeline_override":{
-              "星期二核心制造":{
-                "next":["攻击核心"]
-              },
-              "星期二计划":{
-                "next":["星期二刷核心"]
-              }
-            }
-          }
-        ]
-      },
-      "星期三":{
-        "cases":[
-          {
-            "name":"活动",
-            "pipeline_override":{
-              "星期三计划":{
-                "next":["活动"]
-              }
-            }
-          },
-          {
-            "name":"核心制造:攻击核心",
-            "pipeline_override":{
-              "星期三核心制造":{
-                "next":["攻击核心"]
-              },
-              "星期三计划":{
-                "next":["星期三刷核心"]
-              }
-            }
-          },
-          {
-            "name":"核心制造:生命核心",
-            "pipeline_override":{
-              "星期三核心制造":{
-                "next":["生命核心"]
-              },
-              "星期三计划":{
-                "next":["星期三刷核心"]
-              }
-            }
-          }
-        ]
-      },
-      "星期四":{
-        "cases":[
-          {
-            "name":"活动",
-            "pipeline_override":{
-              "星期四计划":{
-                "next":["活动"]
-              }
-            }
-          },
-          {
-            "name":"核心制造:生命核心",
-            "pipeline_override":{
-              "星期四核心制造":{
-                "next":["生命核心"]
-              },
-              "星期四计划":{
-                "next":["星期四刷核心"]
-              }
-            }
-          }
-        ]
-      },
-      "星期五":{
-        "cases":[
-          {
-            "name":"活动",
-            "pipeline_override":{
-              "星期五计划":{
-                "next":["活动"]
-              }
-            }
-          },
-          {
-            "name":"核心制造:攻击核心",
-            "pipeline_override":{
-              "星期五核心制造":{
-                "next":["攻击核心"]
-              },
-              "星期五计划":{
-                "next":["星期五刷核心"]
-              }
-            }
-          }
-        ]
-      },
-      "星期六":{
-        "cases":[
-          {
-            "name":"活动",
-            "pipeline_override":{
-              "星期六计划":{
-                "next":["活动"]
-              }
-            }
-          },
-          {
-            "name":"核心制造:生命核心",
-            "pipeline_override":{
-              "星期六核心制造":{
-                "next":["生命核心"]
-              },
-              "星期六计划":{
-                "next":["星期六刷核心"]
-              }
-            }
-          }
-        ]
-      },
-      "星期日":{
-        "cases":[
-          {
-            "name":"活动",
-            "pipeline_override":{
-              "星期日计划":{
-                "next":["活动"]
-              }
-            }
-          },
-          {
-            "name":"核心制造:攻击核心",
-            "pipeline_override":{
-              "星期日核心制造":{
-                "next":["攻击核心"]
-              },
-              "星期日计划":{
-                "next":["星期日刷核心"]
-              }
-            }
-          }
-        ]
-      },
-      "圣石选择":{
-        "cases":[
-          {
-            "name":"火属性",
-            "pipeline_override":{
-              "选择属性":{
-                "expected" : "火之洞穴",
-                "focus": "[color:green]选择火属性[/color]"
-              }
-            }
-          },
-          {
-            "name":"水属性",
-            "pipeline_override":{
-              "选择属性":{
-                "expected" : "水之洞穴",
-                "focus": "[color:green]选择水属性[/color]"
-              }
-            }
-          },
-          {
-            "name":"风属性",
-            "pipeline_override":{
-              "选择属性":{
-                "expected" : "风之洞穴",
-                "focus": "[color:green]选择风属性[/color]"
-              }
-            }
-          },
-          {
-            "name":"光属性",
-            "pipeline_override":{
-              "选择属性":{
-                "expected" : "光之洞穴",
-                "focus": "[color:green]选择光属性[/color]"
-              }
-            }
-          },
-          {
-            "name":"暗属性",
-            "pipeline_override":{
-              "选择属性":{
-                "expected" : "暗之洞穴",
-                "focus": "[color:green]选择暗属性[/color]"
-              }
-            }
-          }
-        ]
-      },
-      "作战关卡": {
+    "option": {
+        "核心选项": {
+            "cases": [
+                {
+                    "name": "生命核心",
+                    "pipeline_override": {
+                        "核心制造": {
+                            "next": [
+                                "生命核心"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "攻击核心",
+                    "pipeline_override": {
+                        "核心制造": {
+                            "next": [
+                                "攻击核心"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "星期一": {
+            "cases": [
+                {
+                    "name": "活动",
+                    "pipeline_override": {
+                        "星期一计划": {
+                            "next": [
+                                "活动"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "核心制造:生命核心",
+                    "pipeline_override": {
+                        "星期一核心制造": {
+                            "next": [
+                                "生命核心"
+                            ]
+                        },
+                        "星期一计划": {
+                            "next": [
+                                "星期一刷核心"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "星期二": {
+            "cases": [
+                {
+                    "name": "活动",
+                    "pipeline_override": {
+                        "星期二计划": {
+                            "next": [
+                                "活动"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "核心制造:攻击核心",
+                    "pipeline_override": {
+                        "星期二核心制造": {
+                            "next": [
+                                "攻击核心"
+                            ]
+                        },
+                        "星期二计划": {
+                            "next": [
+                                "星期二刷核心"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "星期三": {
+            "cases": [
+                {
+                    "name": "活动",
+                    "pipeline_override": {
+                        "星期三计划": {
+                            "next": [
+                                "活动"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "核心制造:攻击核心",
+                    "pipeline_override": {
+                        "星期三核心制造": {
+                            "next": [
+                                "攻击核心"
+                            ]
+                        },
+                        "星期三计划": {
+                            "next": [
+                                "星期三刷核心"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "核心制造:生命核心",
+                    "pipeline_override": {
+                        "星期三核心制造": {
+                            "next": [
+                                "生命核心"
+                            ]
+                        },
+                        "星期三计划": {
+                            "next": [
+                                "星期三刷核心"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "星期四": {
+            "cases": [
+                {
+                    "name": "活动",
+                    "pipeline_override": {
+                        "星期四计划": {
+                            "next": [
+                                "活动"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "核心制造:生命核心",
+                    "pipeline_override": {
+                        "星期四核心制造": {
+                            "next": [
+                                "生命核心"
+                            ]
+                        },
+                        "星期四计划": {
+                            "next": [
+                                "星期四刷核心"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "星期五": {
+            "cases": [
+                {
+                    "name": "活动",
+                    "pipeline_override": {
+                        "星期五计划": {
+                            "next": [
+                                "活动"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "核心制造:攻击核心",
+                    "pipeline_override": {
+                        "星期五核心制造": {
+                            "next": [
+                                "攻击核心"
+                            ]
+                        },
+                        "星期五计划": {
+                            "next": [
+                                "星期五刷核心"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "星期六": {
+            "cases": [
+                {
+                    "name": "活动",
+                    "pipeline_override": {
+                        "星期六计划": {
+                            "next": [
+                                "活动"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "核心制造:生命核心",
+                    "pipeline_override": {
+                        "星期六核心制造": {
+                            "next": [
+                                "生命核心"
+                            ]
+                        },
+                        "星期六计划": {
+                            "next": [
+                                "星期六刷核心"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "星期日": {
+            "cases": [
+                {
+                    "name": "活动",
+                    "pipeline_override": {
+                        "星期日计划": {
+                            "next": [
+                                "活动"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "核心制造:攻击核心",
+                    "pipeline_override": {
+                        "星期日核心制造": {
+                            "next": [
+                                "攻击核心"
+                            ]
+                        },
+                        "星期日计划": {
+                            "next": [
+                                "星期日刷核心"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "圣石选择": {
+            "cases": [
+                {
+                    "name": "火属性",
+                    "pipeline_override": {
+                        "选择属性": {
+                            "expected": "火之洞穴",
+                            "focus": "[color:green]选择火属性[/color]"
+                        }
+                    }
+                },
+                {
+                    "name": "水属性",
+                    "pipeline_override": {
+                        "选择属性": {
+                            "expected": "水之洞穴",
+                            "focus": "[color:green]选择水属性[/color]"
+                        }
+                    }
+                },
+                {
+                    "name": "风属性",
+                    "pipeline_override": {
+                        "选择属性": {
+                            "expected": "风之洞穴",
+                            "focus": "[color:green]选择风属性[/color]"
+                        }
+                    }
+                },
+                {
+                    "name": "光属性",
+                    "pipeline_override": {
+                        "选择属性": {
+                            "expected": "光之洞穴",
+                            "focus": "[color:green]选择光属性[/color]"
+                        }
+                    }
+                },
+                {
+                    "name": "暗属性",
+                    "pipeline_override": {
+                        "选择属性": {
+                            "expected": "暗之洞穴",
+                            "focus": "[color:green]选择暗属性[/color]"
+                        }
+                    }
+                }
+            ]
+        },
+        "作战关卡": {
             "cases": [
                 {
                     "name": "技能书",
@@ -1508,6 +1580,66 @@
                 }
             ]
         },
+        "是否自动补充黑匣": {
+            "cases": [
+                {
+                    "name": "Yes",
+                    "pipeline_override": {
+                        "Infr_Dealothers": {
+                            "next": [
+                                "Infr_DealNextFriends_End",
+                                {
+                                    "jump_back": true,
+                                    "name": "判断资源短缺"
+                                },
+                                {
+                                    "jump_back": true,
+                                    "name": "Infr_DealSelf1"
+                                },
+                                {
+                                    "jump_back": true,
+                                    "name": "Infr_DealSelf2"
+                                },
+                                {
+                                    "jump_back": true,
+                                    "name": "Infr_DealSelf3"
+                                },
+                                {
+                                    "jump_back": true,
+                                    "name": "Infr_DealNextFriends_VisitNext"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "No",
+                    "pipeline_override": {
+                        "Infr_Dealothers": {
+                            "next": [
+                                "Infr_DealNextFriends_End",
+                                {
+                                    "jump_back": true,
+                                    "name": "Infr_DealSelf1"
+                                },
+                                {
+                                    "jump_back": true,
+                                    "name": "Infr_DealSelf2"
+                                },
+                                {
+                                    "jump_back": true,
+                                    "name": "Infr_DealSelf3"
+                                },
+                                {
+                                    "jump_back": true,
+                                    "name": "Infr_DealNextFriends_VisitNext"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
         "周本关卡选择": {
             "cases": [
                 {
@@ -1581,6 +1713,25 @@
                     "pipeline_override": {
                         "模拟军演_刷新对手": {
                             "expected": "^([3-9]\\d{4})$"
+                        }
+                    }
+                }
+            ]
+        },
+        "模拟选择": {
+            "cases": [
+                {
+                    "name": "成长",
+                    "pipeline_override": {
+                        "E9选择模拟": {
+                            "recognition": {
+                                "param": {
+                                    "expected": "成"
+                                }
+                            },
+                            "next": [
+                                "E9成长"
+                            ]
                         }
                     }
                 }
