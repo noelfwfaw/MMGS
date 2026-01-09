@@ -16,6 +16,37 @@
             "type": "Click"
         }
     },
+    "E9模拟滑动": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "使用",
+                "roi": [
+                    526,
+                    0,
+                    250,
+                    134
+                ]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    1011,
+                    631,
+                    1,
+                    1
+                ],
+                "end": [
+                    1013,
+                    184,
+                    1,
+                    1
+                ]
+            }
+        }
+    },
     "E9配置队伍": {
         "recognition": {
             "type": "OCR",
