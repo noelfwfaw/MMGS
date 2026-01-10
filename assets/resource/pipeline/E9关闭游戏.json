@@ -1,0 +1,15 @@
+{
+    "关闭E9": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.smilegate.chaoszero.stove.google"
+            }
+        },
+        "post_delay": 1000
+    }
+}

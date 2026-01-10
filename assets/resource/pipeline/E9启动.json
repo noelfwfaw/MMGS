@@ -5,12 +5,13 @@
             "param": {}
         },
         "action": {
-            "type": "DoNothing",
+            "type": "Click",
             "param": {}
         },
         "next": [
             "E9主页面",
-            "启动E9app"
+            "启动E9app",
+            "[JumpBack]E9激活主页面"
         ]
     },
     "启动E9app": {

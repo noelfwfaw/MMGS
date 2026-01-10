@@ -32,7 +32,7 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": "戰",
+                "expected": "力",
                 "roi": [
                     74,
                     442,
@@ -45,7 +45,7 @@
             "type": "Click"
         },
         "next": [
-            "E9战斗员",
+            "E9潜力",
             "[JumpBack]E9模拟滑动"
         ]
     },
@@ -119,7 +119,7 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": "單元",
+                "expected": "秩序",
                 "roi": [
                     791,
                     85,
