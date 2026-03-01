@@ -16,7 +16,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]失落之剑通行证[/color]",
         "next": [
             "失落之剑通行证领取"
@@ -42,7 +42,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]失落之剑通行证领取[/color]",
         "next": [
             "失落之剑通行证领取确认",
@@ -69,7 +69,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]失落之剑通行证领取确认[/color]",
         "next": [
             "失落之证返回"
@@ -95,7 +95,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]失落之证返回[/color]",
         "next": [
             "失落之剑通行证"

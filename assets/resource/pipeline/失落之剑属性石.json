@@ -1,5 +1,5 @@
 {
-    "金币本扫荡": {
+    "属性石扫荡": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -17,15 +17,15 @@
             "param": {}
         },
         "post_delay": 1000,
-        "focus": "[color:green]金币本扫荡[/color]",
+        "focus": "[color:green]属性石扫荡[/color]",
         "next": [
-            "金币本副本"
+            "属性石副本"
         ],
         "on_error": [
             "error"
         ]
     },
-    "金币本副本": {
+    "属性石副本": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -40,19 +40,19 @@
         "post_delay": 1000,
         "focus": "[color:green]副本[/color]",
         "next": [
-            "金币本可扫荡",
-            "金币本无扫荡次数"
+            "属性石可扫荡",
+            "属性石无扫荡次数"
         ],
         "on_error": [
             "error"
         ]
     },
-    "金币本可扫荡": {
+    "属性石可扫荡": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected" : "可扫荡",
-                "roi" : [446,551,162,134]
+                "roi" : [1156,598,79,30]
             }
         },
         "action": {
@@ -68,12 +68,12 @@
             "error"
         ]
      },
-    "金币本无扫荡次数": {
+    "属性石无扫荡次数": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected" : "可进入",
-                "roi" : [446,551,162,134]
+                "roi" : [1156,598,79,30]
             }
         },
         "post_delay": 1000,
