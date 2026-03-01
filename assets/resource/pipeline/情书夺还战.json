@@ -70,6 +70,9 @@
         "action": {
             "type": "Click"
         },
+        "on_error": [
+            "情书夺还战-关闭扫荡"
+        ],
         "next": [
             "情书夺还战-扫荡次数max"
         ]
@@ -124,7 +127,7 @@
             "type": "OCR",
             "param": {
                 "expected" : "TO",
-                "roi" : [585,595,141,125]
+                "roi" : [635,645,40,31]
             }
         },
         "action": {
