@@ -73,12 +73,7 @@
             "type": "OCR",
             "param": {
                 "expected": "TOUCH",
-                "roi": [
-                    465,
-                    513,
-                    203,
-                    130
-                ]
+                "roi" : [507,559,108,33]
             }
         },
         "action": {
