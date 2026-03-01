@@ -15,7 +15,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]棕色尘埃活动[/color]",
         "next": [
             "普通战斗"
@@ -41,11 +41,12 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 10000,
+        "post_delay": 10000,
         "focus": "[color:green]普通战斗[/color]",
         "next": [
             "快速战斗",
-            "棕色尘埃战斗"
+            "棕色尘埃战斗",
+            "普通战斗"
         ],
         "on_error": [
             "error"
@@ -68,7 +69,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]快速战斗[/color]",
         "next": [
             "快速战斗次数",
@@ -92,7 +93,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]快速战斗次数[/color]",
         "next": [
             "快速战斗确认"
@@ -118,7 +119,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]快速战斗确认[/color]",
         "next": [
             "快速战斗奖励"
@@ -144,7 +145,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]快速战斗奖励[/color]",
         "next": [
             "棕色尘埃活动返回"
@@ -170,7 +171,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]棕色尘埃活动返回[/color]",
         "next": [
             "棕色尘埃活动返回2",
@@ -197,7 +198,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]棕色尘埃活动返回2[/color]",
         "next": [
             "棕色尘埃主页面2",
@@ -224,9 +225,10 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 10000,
+        "post_delay": 10000,
         "focus": "[color:green]棕色尘埃战斗[/color]",
         "next": [
+            "活动AP不足",
             "前往下一场战斗",
             "未能识别下一场战斗"
         ],
@@ -251,7 +253,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "timeout": 5000,
         "focus": "[color:green]前往下一场战斗[/color]",
         "next": [
@@ -279,7 +281,7 @@
             "param": {}
         },
         "inverse": true,
-        "post_wait_freezes": 10000,
+        "post_delay": 10000,
         "focus": "[color:green]未能识别下一场战斗[/color]",
         "next": [
             "前往下一场战斗",
@@ -306,7 +308,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 10000,
+        "post_delay": 10000,
         "focus": "[color:green]前往下一场战斗确认[/color]",
         "next": [
             "前往下一场战斗",
@@ -340,7 +342,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]活动AP不足[/color]",
         "next": [
             "AP不足返回",
@@ -367,7 +369,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]AP不足返回[/color]",
         "next": [
             "棕色尘埃活动返回"
@@ -393,10 +395,11 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]AP不足返回2[/color]",
         "next": [
-            "棕色尘埃活动返回"
+            "棕色尘埃活动返回",
+            "棕色尘埃活动返回2"
         ],
         "on_error": [
             "error"

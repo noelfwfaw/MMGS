@@ -26,13 +26,13 @@
         "action": {
             "type": "StartApp",
             "param": {
-                "package": "com.qeeyou.app.accelerator"
+                "package": "com.neowizgames.game.browndust2"
             }
         },
-        "post_wait_freezes": 10000,
+        "post_delay": 10000,
         "focus": "[color:green]启动棕色尘埃2[/color]",
         "next": [
-            "棕色尘埃点击搜索框",
+            "棕色尘埃主页面等待",
             {
                 "name": "奇游更新",
                 "jump_back": true
@@ -59,7 +59,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]棕色尘埃点击搜索框[/color]",
         "next": [
             "输入棕色尘埃"
@@ -79,7 +79,7 @@
                 "input_text": "棕色尘埃"
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]输入棕色尘埃[/color]",
         "next": [
             "加速棕色尘埃"
@@ -150,7 +150,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 10000,
+        "post_delay": 10000,
         "focus": "[color:green]棕色尘埃进入主页面[/color]",
         "next": [
             "棕色尘埃主页面"
@@ -176,7 +176,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]棕色尘埃主页面[/color]",
         "next": [
             "棕色尘埃签到",
@@ -204,7 +204,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]棕色尘埃签到[/color]",
         "next": [
             "棕色尘埃签到",
@@ -239,7 +239,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]棕色尘埃公告[/color]",
         "next": [
             "棕色尘埃跳过广告"
@@ -264,7 +264,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]棕色尘埃跳过广告[/color]",
         "next": [
             "棕色尘埃主页面2",
@@ -276,9 +276,9 @@
     },
     "棕色尘埃主页面2": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": "棕色尘埃主页面2.png",
+                "expected": "我的小屋",
                 "roi": [
                     99,
                     86,

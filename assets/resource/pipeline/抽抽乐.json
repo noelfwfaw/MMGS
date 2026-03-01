@@ -16,7 +16,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]抽抽乐[/color]",
         "next": [
             "查找红点",
@@ -51,7 +51,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]查找红点[/color]",
         "next": [
             "抽卡",
@@ -104,7 +104,7 @@
             "type": "DoNothing",
             "param": {}
         },
-        "post_wait_freezes": 2000,
+        "post_delay": 2000,
         "focus": "[color:green]抽抽乐确认[/color]",
         "next": [
             "抽抽乐后点击",
@@ -136,7 +136,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 20000,
+        "post_delay": 20000,
         "focus": "[color:green]抽抽乐后点击[/color]",
         "next": [
             "抽抽乐返回",
@@ -167,7 +167,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 2000,
+        "post_delay": 2000,
         "focus": "[color:green]抽抽乐返回[/color]",
         "next": [
             "查找红点",
@@ -201,7 +201,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]抽抽乐滑动[/color]",
         "next": [
             "查找红点"
@@ -227,7 +227,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]抽抽乐返回2[/color]",
         "next": [
             "棕色尘埃主页面2",
@@ -261,7 +261,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 10000,
+        "post_delay": 10000,
         "focus": "[color:green]五星确认[/color]",
         "on_error": [
             "error"
