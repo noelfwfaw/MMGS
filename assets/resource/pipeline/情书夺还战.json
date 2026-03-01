@@ -1,0 +1,152 @@
+{
+    "情书夺还战":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "情书夺还战",
+                "roi" : [15,158,157,496]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-前往活动"
+        ]
+    },
+    "情书夺还战-前往活动":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "前往活动",
+                "roi" : [987,509,293,211]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-偷心"
+        ]
+    },
+    "情书夺还战-偷心":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "偷心",
+                "roi" : [918,554,218,132]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-选择难度-地狱"
+        ]
+    },
+    "情书夺还战-选择难度-地狱":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "地狱",
+                "roi" : [1068,539,149,135]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-扫荡"
+        ]
+    },
+    "情书夺还战-扫荡":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "扫荡",
+                "roi" : [650,514,160,129]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-扫荡次数max"
+        ]
+    },
+    "情书夺还战-扫荡次数max":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "MAX",
+                "roi" : [712,170,167,130]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-扫荡确认"
+        ]
+    },
+    "情书夺还战-扫荡确认":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "开始扫荡",
+                "roi" : [531,471,215,140]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-完成"
+        ]
+    },
+    "情书夺还战-完成":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "确认",
+                "roi" : [538,539,190,139]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-关闭扫荡"
+        ]
+    },
+    "情书夺还战-关闭扫荡":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "TO",
+                "roi" : [585,595,141,125]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-返回主页"
+        ]
+    },
+    "情书夺还战-返回主页":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "试炼章节",
+                "roi" : [236,0,217,135]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target" : [154,26,38,28]
+            }
+        }
+    }
+}
