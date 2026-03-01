@@ -16,7 +16,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]经验书扫荡[/color]",
         "next": [
             "副本"
@@ -42,7 +42,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]副本[/color]",
         "next": [
             "经验书副本"
@@ -68,7 +68,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]经验书副本[/color]",
         "next": [
             "经验书讨伐"
@@ -79,9 +79,9 @@
     },
     "经验书讨伐": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": "经验书讨伐.png",
+                "expected": ["扫荡"],
                 "roi": [
                     876,
                     630,
@@ -94,7 +94,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]经验书讨伐[/color]",
         "next": [
             "经验书讨伐确认",
@@ -122,7 +122,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]经验书讨伐确认[/color]",
         "next": [
             "经验书讨伐",
@@ -156,7 +156,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]经验书讨伐确认2[/color]",
         "next": [
             "经验书讨伐确认"
@@ -189,7 +189,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]经验书讨伐次数耗尽[/color]",
         "next": [
             "讨伐返回"

@@ -16,7 +16,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]队伍讨伐[/color]",
         "next": [
             "队伍"
@@ -42,7 +42,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]队伍[/color]",
         "next": [
             "队伍讨伐2"
@@ -53,9 +53,9 @@
     },
     "队伍讨伐2": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": "队伍讨伐.png",
+                "expected": "小队副本",
                 "roi": [
                     43,
                     180,
@@ -68,7 +68,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]队伍讨伐2[/color]",
         "next": [
             "匹配"
@@ -95,7 +95,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]匹配[/color]",
         "next": [
             "匹配确认",
@@ -129,7 +129,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 5000,
+        "post_delay": 5000,
         "focus": "[color:green]匹配确认[/color]",
         "next": [
             "匹配等待"
@@ -147,7 +147,7 @@
             "type": "DoNothing",
             "param": {}
         },
-        "post_wait_freezes": 5000,
+        "post_delay": 5000,
         "focus": "[color:green]匹配等待[/color]",
         "next": [
             "匹配确认2",
@@ -161,20 +161,15 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": "胜利",
-                "roi": [
-                    1016,
-                    508,
-                    238,
-                    55
-                ]
+                "expected": "返回",
+                "roi" : [1068,583,161,132]
             }
         },
         "action": {
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]匹配确认2[/color]",
         "next": [
             "讨伐返回"
@@ -207,7 +202,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]匹配次数耗尽[/color]",
         "next": [
             "讨伐返回"

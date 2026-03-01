@@ -16,7 +16,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]讨伐[/color]",
         "next": [
             "领主突袭"
@@ -42,7 +42,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]领主突袭[/color]",
         "next": [
             "讨伐次数0",
@@ -76,7 +76,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]讨伐次数0[/color]",
         "next": [
             "讨伐返回"
@@ -102,7 +102,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 5000,
+        "post_delay": 5000,
         "focus": "[color:green]讨伐一次[/color]",
         "next": [
             "讨伐一次确认",
@@ -114,9 +114,9 @@
     },
     "讨伐一次确认": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": "讨伐一次确认.png",
+                "expected": "胜利",
                 "roi": [
                     1016,
                     508,
@@ -129,7 +129,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]讨伐一次确认[/color]",
         "next": [
             "讨伐扫荡"
@@ -147,10 +147,8 @@
             "type": "DoNothing",
             "param": {}
         },
-        "post_wait_freezes": 5000,
+        "post_delay": 5000,
         "focus": "[color:green]讨伐等待[/color]",
-        "focus_tip": "讨伐等待5秒",
-        "focus_tip_color": "blue",
         "next": [
             "讨伐一次确认",
             "讨伐等待"
@@ -158,9 +156,9 @@
     },
     "讨伐扫荡": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": "讨伐扫荡.png",
+                "expected": "扫荡",
                 "roi": [
                     909,
                     641,
@@ -173,7 +171,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]讨伐扫荡[/color]",
         "next": [
             "讨伐确认"
@@ -199,7 +197,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "timeout": 60000,
         "focus": "[color:green]讨伐返回[/color]",
         "next": [
@@ -234,7 +232,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]讨伐确认[/color]",
         "next": [
             "讨伐奖励确认"
@@ -260,7 +258,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]讨伐奖励确认[/color]",
         "next": [
             "讨伐扫荡",

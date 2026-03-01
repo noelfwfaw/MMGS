@@ -16,7 +16,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]失落之剑竞技场[/color]",
         "next": [
             "失落之剑竞技场2"
@@ -42,7 +42,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]失落之剑竞技场2[/color]",
         "next": [
             "失落之剑竞技场挑战"
@@ -94,11 +94,11 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]失落之剑竞技场挑战2[/color]",
         "next": [
             "失落之剑竞技场门票不足",
-            "失落之剑竞技场等待"
+            "失落之剑竞技场跳过"
         ],
         "on_error": [
             "error"
@@ -128,7 +128,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]失落之剑竞技场挑战2[/color]",
         "next": [
             "讨伐返回"
@@ -137,21 +137,24 @@
             "error"
         ]
     },
-    "失落之剑竞技场等待": {
+    "失落之剑竞技场跳过": {
         "recognition": {
-            "type": "DirectHit",
-            "param": {}
+            "type": "OCR",
+            "param": {
+                "expected": "Skip",
+                "roi" : [1123,14,66,30]
+            }
         },
         "action": {
-            "type": "DoNothing",
+            "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:blue]失落之剑竞技场等待[/color]",
         "next": [
             "失落之剑竞技场继续",
             "失落之剑竞技场门票不足",
-            "失落之剑竞技场等待"
+            "失落之剑竞技场跳过"
         ]
     },
     "失落之剑竞技场继续": {
@@ -178,7 +181,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]失落之剑竞技场继续[/color]",
         "next": [
             "失落之剑竞技场挑战",

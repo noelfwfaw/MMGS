@@ -1,5 +1,5 @@
 {
-    "失落之剑活动": {
+    "金币本扫荡": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -17,25 +17,20 @@
             "param": {}
         },
         "post_delay": 1000,
-        "focus": "[color:green]失落之剑活动[/color]",
+        "focus": "[color:green]经验书扫荡[/color]",
         "next": [
-            "失落之剑活动2"
+            "金币本副本"
         ],
         "on_error": [
             "error"
         ]
     },
-    "失落之剑活动2": {
+    "金币本副本": {
         "recognition": {
-            "type": "TemplateMatch",
+            "type": "OCR",
             "param": {
-                "template": "失落之剑活动.png",
-                "roi": [
-                    1108,
-                    65,
-                    92,
-                    53
-                ]
+                "template": "战斗.png",
+                "roi" : [321,35,185,131]
             }
         },
         "action": {
@@ -43,21 +38,21 @@
             "param": {}
         },
         "post_delay": 1000,
-        "focus": "[color:green]失落之剑活动2[/color]",
+        "focus": "[color:green]副本[/color]",
         "next": [
-            "失落之剑活动3",
-            "失落之剑无扫荡次数"
+            "金币本可扫荡",
+            "金币本无扫荡次数"
         ],
         "on_error": [
             "error"
         ]
     },
-    "失落之剑活动3": {
+    "金币本可扫荡": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected" : "可扫荡",
-                "roi" : [113,541,160,141]
+                "roi" : [446,551,162,134]
             }
         },
         "action": {
@@ -65,29 +60,29 @@
             "param": {}
         },
         "post_delay": 1000,
-        "focus": "[color:green]失落之剑活动3[/color]",
+        "focus": "[color:green]可扫荡[/color]",
         "next": [
-            "经验书讨伐"
+            "经验书扫荡"
         ],
         "on_error": [
             "error"
         ]
-    },
-    "失落之剑无扫荡次数": {
+     },
+    "金币本无扫荡次数": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "expected" : "可进入",
-                "roi" : [113,541,160,141]
+                "roi" : [446,551,162,134]
             }
         },
         "post_delay": 1000,
-        "focus": "[color:green]失落之剑无扫荡次数[/color]",
+        "focus": "[color:green]无扫荡次数[/color]",
         "next": [
             "讨伐返回"
         ],
         "on_error": [
             "error"
         ]
-    }
+     }
 }

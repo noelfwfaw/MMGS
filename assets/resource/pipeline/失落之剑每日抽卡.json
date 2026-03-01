@@ -16,7 +16,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]失落之剑每日抽卡[/color]",
         "next": [
             "召唤滑动"
@@ -57,7 +57,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]召唤滑动[/color]",
         "next": [
             "召唤角色"
@@ -70,7 +70,7 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": "召唤角色",
+                "expected": "领取角色",
                 "roi": [
                     29,
                     99,
@@ -83,7 +83,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]召唤角色[/color]",
         "next": [
             "免费召唤",
@@ -110,7 +110,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]免费召唤[/color]",
         "next": [
             "召唤确认",
@@ -137,7 +137,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 2000,
+        "post_delay": 2000,
         "focus": "[color:green]召唤确认[/color]",
         "next": [
             "召唤确认2"
@@ -157,7 +157,7 @@
                 "target": "召唤确认"
             }
         },
-        "post_wait_freezes": 2000,
+        "post_delay": 2000,
         "focus": "[color:green]召唤确认2[/color]",
         "next": [
             "召唤宠物"
@@ -170,7 +170,7 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": "召唤宠物",
+                "expected": "领取宠物",
                 "roi": [
                     29,
                     99,
@@ -183,7 +183,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 1000,
+        "post_delay": 1000,
         "focus": "[color:green]召唤宠物[/color]",
         "next": [
             "免费召唤",
@@ -210,7 +210,7 @@
             "type": "Click",
             "param": {}
         },
-        "post_wait_freezes": 2000,
+        "post_delay": 2000,
         "focus": "[color:green]召唤宠物确认[/color]",
         "next": [
             "召唤确认"
@@ -243,7 +243,7 @@
                 ]
             }
         },
-        "post_wait_freezes": 2000,
+        "post_delay": 2000,
         "focus": "[color:green]召唤返回[/color]",
         "next": [
             "召唤返回",
