@@ -1,4 +1,9 @@
 {
+    "棕色尘埃日常":{
+        "next": [
+            "经营管理"
+        ]
+    },
     "日常扫荡": {
         "recognition": {
             "type": "OCR",
@@ -15,6 +20,90 @@
         "focus": "[color:green]日常扫荡[/color]",
         "next": [
             "史莱姆"
+        ],
+        "on_error": [
+            "error"
+        ]
+    },
+    "经营管理": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "经营管理",
+                "roi" : [48,185,174,118]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000,
+        "focus": "[color:green]经营管理[/color]",
+        "on_error": [
+            "经营取消"
+        ],
+        "next": [
+            "结算"
+        ]
+    },
+    "结算": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "一键获得",
+                "roi" : [651,456,180,128]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000,
+        "focus": "[color:green]结算[/color]",
+        "next": [
+            "结算奖励"
+        ],
+        "on_error": [
+            "error"
+        ]
+    },
+    "结算奖励": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "点击",
+                "roi" : [516,587,138,126]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000,
+        "focus": "[color:green]结算奖励[/color]",
+        "next": [
+            "经营取消"
+        ],
+        "on_error": [
+            "error"
+        ]
+    },
+    "经营取消": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "取消",
+                "roi" : [456,453,162,133]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000,
+        "focus": "[color:green]经营取消[/color]",
+        "next": [
+            "日常扫荡"
         ],
         "on_error": [
             "error"
