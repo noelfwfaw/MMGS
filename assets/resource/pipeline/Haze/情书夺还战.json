@@ -119,6 +119,7 @@
             "type": "Click"
         },
         "next": [
+            "[JumpBack]关闭联合讨伐",
             "情书夺还战-关闭扫荡"
         ]
     },
@@ -136,6 +137,18 @@
         "next": [
             "情书夺还战-返回主页"
         ]
+    },
+    "关闭联合讨伐": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "取消",
+                "roi" : [415,484,163,126]
+            }
+        },
+        "action": {
+            "type": "Click"
+        }
     },
     "情书夺还战-返回主页":{
         "recognition": {
