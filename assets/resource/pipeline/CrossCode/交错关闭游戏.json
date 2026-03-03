@@ -10,6 +10,7 @@
         "recognition": {
             "param": {},
             "type": "DirectHit"
-        }
+        },
+        "max_hit": 1
     }
 }

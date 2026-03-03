@@ -99,4 +99,3 @@ class KillAllApps(CustomAction):
 
         print(f"[DONE] 已成功关闭 {success_count}/{len(packages)} 个应用")
         return CustomAction.RunResult(success=True)
-

@@ -1,60 +1,12 @@
 {
-    "一键关闭后台": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "DoNothing",
-            "param": {}
-        },
+    "关闭所有游戏": {
         "next": [
-            "关闭1"
-        ]
-    },
-    "关闭1": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "StopApp",
-            "param": {
-                "package": "com.neowizgames.game.browndust2"
-            }
-        },
-        "next": [
-            "关闭2"
-        ]
-    },
-    "关闭2": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "StopApp",
-            "param": {
-                "package": "com.wemadeconnect.aos.lostdgl"
-            }
-        },
-        "next": [
-            "关闭3"
-        ]
-    },
-    "关闭3": {
-        "recognition": {
-            "type": "DirectHit",
-            "param": {}
-        },
-        "action": {
-            "type": "StopApp",
-            "param": {
-                "package": "com.feimo.hazeworld.bilibili"
-            }
-        },
-        "next": [
-            "关闭奇游"
+            "[JumpBack]关闭E9",
+            "[JumpBack]关闭失落之剑",
+            "[JumpBack]关闭大眼",
+            "[JumpBack]关闭棕色尘埃",
+            "[JumpBack]关闭苍雾",
+            "关闭游戏"
         ]
     }
 }

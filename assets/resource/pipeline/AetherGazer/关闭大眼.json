@@ -9,6 +9,7 @@
             "param": {
                 "package": "com.yongshi.tenojo.bilibili"
             }
-        }
+        },
+        "max_hit": 1
     }
 }

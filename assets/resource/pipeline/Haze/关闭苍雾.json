@@ -10,6 +10,7 @@
                 "package": "com.feimo.hazeworld.bilibili"
             }
         },
-        "focus": "[color:red]关闭成功[/color]"
+        "focus": "[color:red]关闭成功[/color]",
+        "max_hit": 1
     }
 }

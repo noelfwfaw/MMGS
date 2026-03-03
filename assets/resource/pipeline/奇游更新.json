@@ -8,5 +8,8 @@
             "type": "DoNothing",
             "param": {}
         }
+    },
+    "一键关闭后台":{
+        "next": []
     }
 }

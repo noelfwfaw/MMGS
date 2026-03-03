@@ -10,11 +10,6 @@
                 "package": "com.neowizgames.game.browndust2"
             }
         },
-        "next": [
-            "关闭奇游"
-        ],
-        "on_error": [
-            "error"
-        ]
+        "max_hit": 1
     }
 }
