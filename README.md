@@ -70,15 +70,22 @@
   
 </details>
 <details>
-<summary>卡厄思梦境（适配中）</summary>
+<summary>卡厄思梦境（适配）</summary>
   
 - 收菜（方舟政策，咖啡）
 - 模拟
 - 每日任务
   
 </details>
-
-- 深空之眼（未完成）
+<details>
+<summary>深空之眼（适配）</summary>
+  
+- 清空体力（目前只打刻印）
+- 观测站
+- 商店
+- 任务和通行证
+  
+</details>
 - 妮姬国服（未完成）
 - 嘟嘟脸恶作剧（新建文件夹）
 
