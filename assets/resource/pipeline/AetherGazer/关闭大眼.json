@@ -1,0 +1,14 @@
+{
+    "关闭大眼": {
+        "recognition": {
+            "type": "DirectHit",
+            "param": {}
+        },
+        "action": {
+            "type": "StopApp",
+            "param": {
+                "package": "com.yongshi.tenojo.bilibili"
+            }
+        }
+    }
+}
