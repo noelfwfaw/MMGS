@@ -1,0 +1,112 @@
+{
+    "大眼观测站":{
+        "next":[
+            "大眼菜单",
+            "[JumpBack]大眼唤醒待机页面",
+            "[JumpBack]大眼关闭菜单"
+        ]
+    },
+    "大眼菜单":{
+        "recognition":{
+            "type":"TemplateMatch",
+            "param":{
+                "template" : "大眼菜单.png",
+                "roi" : [1099,19,144,129]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼点击观测站",
+            "大眼菜单"
+        ]
+    },
+    "大眼点击观测站":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "观测站",
+                "roi" : [1008,281,160,133]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼观测站一键领取",
+            "大眼探索中"
+        ]
+    },
+    "大眼探索中":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "探索中",
+                "roi" : [448,313,148,115]
+            }
+        },
+        "next":[
+            "大眼返回主页面"
+        ]
+    },
+    "大眼观测站一键领取":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "领取",
+                "roi" : [872,585,187,128]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼一键派遣",
+            "[JumpBack]大眼通用点击空屏"
+        ]
+    },
+    "大眼一键派遣":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "派遣",
+                "roi" : [872,585,187,128]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼返回主页面",
+            "[JumpBack]大眼通用点击空屏"
+        ]
+    },
+    "大眼通用点击空屏":{
+        "action":{
+            "param":{
+                "target" : [9,10,39,17]
+            },
+            "type":"Click"
+        }
+    },
+    "大眼关闭菜单":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "钥从",
+                "roi" : [871,163,151,131]
+            }
+        },
+        "action":{
+            "param":{
+                "target" : [490,412,45,35]
+            },
+            "type":"Click"
+        }
+    }
+}
