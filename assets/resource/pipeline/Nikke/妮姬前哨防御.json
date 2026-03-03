@@ -1,0 +1,112 @@
+{
+    "妮姬前哨防御":{
+        "next":[
+            "妮姬前哨防御-前往"
+        ]
+    },
+    "妮姬前哨防御-前往":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "商店",
+                "roi" : [317,425,157,131]
+            }
+        },
+        "action":{
+            "type":"Click",
+            "param":{
+                "target" : [359,588,21,16]
+            }
+        },
+        "next":[
+            "妮姬前哨防御-前哨防御获得奖励",
+            "妮姬前哨防御-前往"
+        ]
+    },
+    "妮姬前哨防御-前哨防御获得奖励":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "获得奖励",
+                "roi" : [652,552,165,126]
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "next":[
+            "妮姬前哨防御-一举歼灭",
+            "[JumpBack]妮姬通用-点击领取奖励"
+        ]
+    },
+    "妮姬前哨防御-一举歼灭":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "一举歼灭",
+                "roi" : [532,603,82,26]
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "timeout":5000,
+        "on_error":[
+            "妮姬前哨防御-退回主页面2"
+        ],
+        "next":[
+            "妮姬前哨防御-进行歼灭"
+        ]
+    },
+    "妮姬前哨防御-进行歼灭":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "进行",
+                "roi" : [666,539,44,24]
+            }
+        },
+        "action":{
+            "type":"Click"
+        },
+        "on_error":[
+            "妮姬前哨防御-退回主页面2"
+        ],
+        "timeout":5000,
+        "next":[
+            "妮姬前哨防御-退回主页面"
+        ]
+    },
+    "妮姬前哨防御-退回主页面":{
+        "action":{
+            "type":"Click",
+            "param":{
+                "target" : [926,323,38,34]
+            }
+        },
+        "repeat":3,
+        "repeat_delay":1000
+    },
+    "妮姬前哨防御-退回主页面2":{
+        "action":{
+            "type":"Click",
+            "param":{
+                "target" : [926,323,38,34]
+            }
+        },
+        "repeat":3,
+        "repeat_delay":1000
+    },
+    "妮姬通用-点击领取奖励":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "点击",
+                "roi" : [569,125,160,561]
+            }
+        },
+        "action":{
+            "type":"Click"
+        }
+    }
+}

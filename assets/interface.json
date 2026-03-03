@@ -11,6 +11,17 @@
             "name": "安卓端",
             "type": "Adb",
             "display_short_side": 720
+        },
+        {
+            "name": "桌面端",
+            "type": "Win32",
+            "win32": {
+                "class_regex": ".*",
+                "window_regex": "胜利女神：新的希望",
+                "screencap": "PrintWindow",
+                "mouse": "Seize",
+                "keyboard": "Seize"
+            }
         }
     ],
     "resource": [
