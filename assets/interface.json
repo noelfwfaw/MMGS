@@ -342,6 +342,31 @@
         {
             "name": "关闭大眼",
             "entry": "关闭大眼"
+        },
+        {
+            "name": "妮姬前哨防御",
+            "entry": "妮姬前哨防御"
+        },
+        {
+            "name": "妮姬派遣",
+            "entry": "妮姬派遣"
+        },
+        {
+            "name": "妮姬好友点赞",
+            "entry": "妮姬好友点赞"
+        },
+        {
+            "name": "妮姬咨询",
+            "entry": "妮姬咨询",
+            "option": [
+                "一号咨询",
+                "二号咨询",
+                "三号咨询",
+                "四号咨询",
+                "五号咨询",
+                "六号咨询",
+                "七号咨询"
+            ]
         }
     ],
     "option": {
@@ -2210,6 +2235,97 @@
                     }
                 }
             ]
+        },
+        "一号咨询": {
+            "type": "input",
+            "inputs":[
+                {
+                    "name": "一号咨询"
+                }
+            ],
+            "pipeline_override": {
+                "一号咨询": {
+                    "expected": "{一号咨询}"
+                }
+            }
+        },
+        "二号咨询": {
+            "type": "input",
+            "inputs":[
+                {
+                    "name": "二号咨询"
+                }
+            ],
+            "pipeline_override": {
+                "二号咨询": {
+                    "expected": "{二号咨询}"
+                }
+            }
+        },
+        "三号咨询": {
+            "type": "input",
+            "inputs":[
+                {
+                    "name": "三号咨询"
+                }
+            ],
+            "pipeline_override": {
+                "三号咨询": {
+                    "expected": "{三号咨询}"
+                }
+            }
+        },
+        "四号咨询": {
+            "type": "input",
+            "inputs":[
+                {
+                    "name": "四号咨询"
+                }
+            ],
+            "pipeline_override": {
+                "四号咨询": {
+                    "expected": "{四号咨询}"
+                }
+            }
+        },
+        "五号咨询": {
+            "type": "input",
+            "inputs":[
+                {
+                    "name": "五号咨询"
+                }
+            ],
+            "pipeline_override": {
+                "五号咨询": {
+                    "expected": "{五号咨询}"
+                }
+            }
+        },
+        "六号咨询": {
+            "type": "input",
+            "inputs":[
+                {
+                    "name": "六号咨询"
+                }
+            ],
+            "pipeline_override": {
+                "六号咨询": {
+                    "expected": "{六号咨询}"
+                }
+            }
+        },
+        "七号咨询": {
+            "type": "input",
+            "inputs":[
+                {
+                    "name": "七号咨询"
+                }
+            ],
+            "pipeline_override": {
+                "七号咨询": {
+                    "expected": "{七号咨询}"
+                }
+            }
         }
     }
 }
