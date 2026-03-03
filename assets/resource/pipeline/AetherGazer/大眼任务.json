@@ -1,0 +1,81 @@
+{
+    "大眼任务": {
+       "next": [
+           "大眼点击任务",
+           "[JumpBack]大眼唤醒待机页面",
+           "[JumpBack]大眼关闭菜单"
+       ]
+    },
+    "大眼点击任务": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template" : "大眼任务.png",
+                "roi" : [981,11,135,136]
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "on_error": [
+            "大眼返回主页面"
+        ],
+        "timeout": 5000,
+        "next": [
+            "大眼每日任务领取"
+        ]
+    },
+    "大眼每日任务领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "领取",
+                "roi" : [1111,602,151,118]
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "大眼每日任务领取",
+            "大眼每周任务",
+            "[JumpBack]大眼通用点击空屏"
+        ]
+    },
+    "大眼每周任务": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "周常任务",
+                "roi" : [41,134,196,133]
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "大眼每周任务领取"
+        ]
+    },
+    "大眼每周任务领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "领取",
+                "roi" : [1111,602,151,118]
+            }
+        },
+        "action": {
+            "param": {},
+            "type": "Click"
+        },
+        "next": [
+            "大眼每日任务领取",
+            "大眼返回主页面",
+            "[JumpBack]大眼通用点击空屏"
+        ]
+    }
+}
