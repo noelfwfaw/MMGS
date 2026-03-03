@@ -1,0 +1,58 @@
+{
+    "棕色尘埃领取邮件": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template" : "棕色尘埃邮箱.png",
+                "roi" : [961,0,141,126]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "棕色尘埃领取邮件-领取",
+            "棕色尘埃领取邮件"
+        ]
+    },
+    "棕色尘埃领取邮件-领取": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "普通邮箱",
+                "roi" : [175,0,212,133]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target" : [1066,649,41,23]
+            }
+        },
+        "post_delay": 3000,
+        "next": [
+            "[JumpBack]棕色尘埃邮箱奖励",
+            "抽抽乐返回2"
+        ]
+    },
+    "棕色尘埃邮箱奖励": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": "快速战斗奖励.png",
+                "roi": [
+                    558,
+                    628,
+                    144,
+                    35
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 1000
+    }
+}
