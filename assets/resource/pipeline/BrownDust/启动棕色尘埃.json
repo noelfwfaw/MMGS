@@ -278,13 +278,8 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": "我的小屋",
-                "roi": [
-                    99,
-                    86,
-                    244,
-                    91
-                ]
+                "expected": "经营管理",
+                "roi" : [48,185,174,118]
             }
         },
         "action": {
