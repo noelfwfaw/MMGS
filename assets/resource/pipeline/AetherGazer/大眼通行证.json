@@ -1,0 +1,95 @@
+{
+    "大眼通行证":{
+        "next":[
+            "大眼点击通行证",
+            "[JumpBack]大眼唤醒待机页面",
+            "[JumpBack]大眼关闭菜单"
+        ]
+    },
+    "大眼点击通行证":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "对策协议",
+                "roi" : [10,85,102,347]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼通行证任务"
+        ]
+    },
+    "大眼通行证任务":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "任务",
+                "roi" : [52,604,154,116]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼通行证任务领取",
+            "大眼返回通行证"
+        ]
+    },
+    "大眼通行证任务领取":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "领取",
+                "roi" : [1112,606,155,114]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼返回通行证",
+            "[JumpBack]大眼通用点击空屏"
+        ]
+    },
+    "大眼返回通行证":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "购买等级",
+                "roi" : [1044,88,196,133]
+            }
+        },
+        "action":{
+            "param":{
+                "target" : [37,23,30,31]
+            },
+            "type":"Click"
+        },
+        "next":[
+            "大眼通行证领取",
+            "大眼返回主页面"
+        ]
+    },
+    "大眼通行证领取":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "领取",
+                "roi" : [1161,657,53,31]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼返回主页面",
+            "[JumpBack]大眼通用点击空屏"
+        ]
+    }
+}
