@@ -1,0 +1,111 @@
+{
+    "大眼商店":{
+        "next":[
+            "大眼点击商店",
+            "[JumpBack]大眼唤醒待机页面",
+            "[JumpBack]大眼关闭菜单"
+        ]
+    },
+    "大眼点击商店":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "商店",
+                "roi" : [656,620,141,100]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼点击商店",
+            "大眼商店补给区"
+        ]
+    },
+    "大眼商店补给区":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "补给区",
+                "roi" : [228,576,194,141]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼商店补给区",
+            "大眼限时补给"
+        ]
+    },
+    "大眼限时补给":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "限时补给",
+                "roi" : [279,88,677,47]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "[JumpBack]大眼领取免费补给",
+            "大眼日常补给",
+            "[JumpBack]大眼通用点击空屏"
+        ]
+    },
+    "大眼日常补给":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "日常补给",
+                "roi" : [279,88,677,47]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "[JumpBack]大眼领取免费补给",
+            "大眼返回主页面",
+            "[JumpBack]大眼通用点击空屏"
+        ]
+    },
+    "大眼领取免费补给":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "免费",
+                "roi" : [301,331,161,134]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "大眼免费领取确认"
+        ]
+    },
+    "大眼免费领取确认":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "确定",
+                "roi" : [818,548,150,127]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "post_delay":3000,
+        "next":[
+        ]
+    }
+}
