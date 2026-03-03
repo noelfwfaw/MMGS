@@ -1,0 +1,71 @@
+{
+    "妮姬好友点赞": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "好友",
+                "roi" : [1228,237,33,23]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "妮姬好友赠送"
+        ]
+    },
+    "妮姬好友赠送": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "赠送",
+                "roi" : [740,603,34,17]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            {
+                "name": "妮姬通知",
+                "jump_back": true
+            },
+            "妮姬关闭好友"
+        ]
+    },
+    "妮姬通知": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "通知",
+                "roi" : [631,197,43,34]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target" : [635,438,35,25]
+            }
+        }
+    },
+    "妮姬关闭好友": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "赠送",
+                "roi" : [740,603,34,17]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target" : [958,294,43,40]
+            }
+        },
+        "next": [
+            "妮姬主页面"
+        ]
+    }
+}
