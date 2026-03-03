@@ -151,7 +151,7 @@
         }
     },
     "情书夺还战-返回主页":{
-        "recognition": {
+        "recognition": { 
             "type": "OCR",
             "param": {
                 "expected" : "试炼章节",
@@ -161,7 +161,162 @@
         "action": {
             "type": "Click",
             "param": {
-                "target" : [154,26,38,28]
+                "target" : [53,29,37,23]
+            }
+        },
+        "next": [
+            "情书夺还战-商店购买"
+        ]
+    },
+    "情书夺还战-商店购买":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "商铺",
+                "roi" : [285,660,64,46]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-购买盾币",
+            "[JumpBack]情书夺还战-向右拖拽"
+        ]
+    },
+    "情书夺还战-向右拖拽":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "活动",
+                "roi" : [231,0,164,133]
+            }
+        },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin" : [1127,411,1,1],
+                "end" : [224,419,1,1]
+            }
+        }
+    },
+    "情书夺还战-购买盾币":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "盾币",
+                "roi" : [351,76,928,596]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "情书夺还战-数量5"
+        ]
+    },
+    "情书夺还战-数量5":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "确认",
+                "roi" : [715,440,175,132]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target" : [721,383,18,22]
+            }
+        },
+        "repeat": 4,
+        "next": [
+            "情书夺还战-购买确认"
+        ]
+    },
+    "情书夺还战-购买确认":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "确认",
+                "roi" : [715,440,175,132]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat":2,
+        "repeat_delay":1000,
+        "next": [
+            "情书夺还战-返回主页2"
+        ]
+    },
+    "情书夺还战-返回主页2":{
+        "recognition": { 
+            "type": "OCR",
+            "param": {
+                "expected" : "活动",
+                "roi" : [236,0,217,135]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target" : [53,29,37,23]
+            }
+        },
+        "next": [
+            "情书夺还战-任务"
+        ]
+    },
+    "情书夺还战-任务":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "保密",
+                "roi" : [471,592,144,125]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "on_error": [
+            "情书夺还战-返回主页3"
+        ],
+        "timeout": 5000,
+        "next": [
+            "情书夺还战-任务领取"
+        ]
+    },
+    "情书夺还战-任务领取":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "领取",
+                "roi" : [1085,651,123,37]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 2,
+        "repeat_delay":1000,
+        "next": [
+            "情书夺还战-返回主页3"
+        ]
+    },
+    "情书夺还战-返回主页3":{
+        "recognition": { 
+            "type": "OCR",
+            "param": {
+                "expected" : "活动",
+                "roi" : [236,0,217,135]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target" : [152,26,39,26]
             }
         }
     }
