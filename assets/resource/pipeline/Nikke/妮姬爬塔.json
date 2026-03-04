@@ -1,0 +1,130 @@
+{
+    "妮姬爬塔": {
+        "next": [
+            "妮姬点击无限之塔",
+            "[JumpBack]妮姬方舟",
+            "[JumpBack]妮姬返回主页面"
+        ]
+    },
+    "妮姬点击无限之塔": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "无限",
+                "roi" : [684,257,150,116]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target" : [738,230,27,40]
+            }
+        },
+        "on_error": [
+            "妮姬返回主页面"
+        ],
+        "timeout":5000,
+        "next": [
+            "妮姬爬塔检测"
+        ]
+    },
+    "妮姬爬塔检测": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "3/3",
+                "roi" : [457,587,375,73]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset" : [0,-100,0,0]
+            }
+        },
+        "on_error": [
+            "妮姬返回主页面"
+        ],
+        "timeout":5000,
+        "next": [
+            "妮姬开始爬塔",
+            "妮姬爬塔检测"
+        ]
+    },
+    "妮姬开始爬塔": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "进入",
+                "roi" : [690,639,119,52]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]妮姬爬塔下一关",
+            "妮姬爬塔结束",
+            "妮姬开始爬塔",
+            "[JumpBack]妮姬战斗中"
+        ]
+    },
+    "妮姬战斗中":{
+        "action":{
+            "type":"DoNothing"
+        },
+        "post_delay":5000
+    },
+    "妮姬爬塔结束":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "点击",
+                "roi" : [532,572,149,131]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay":3000,
+        "next": [
+            "妮姬爬塔返回",
+            "妮姬爬塔结束"
+        ]
+    },
+    "妮姬爬塔下一关":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "下一关",
+                "roi" : [1128,615,152,105]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "max_hit":20,
+        "post_delay":3000,
+        "next": [
+        ]
+    },
+    "妮姬爬塔返回":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "返回",
+                "roi" : [41,667,37,30]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "on_error": [
+            "妮姬返回主页面"
+        ],
+        "timeout":5000,
+        "next": [
+            "妮姬爬塔检测"
+        ]
+    }
+}
