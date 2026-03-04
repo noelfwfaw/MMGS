@@ -1,0 +1,129 @@
+{
+    "妮姬同步器": {
+        "next": [
+            "妮姬同步器-点击前哨基地",
+            "[JumpBack]妮姬返回主页面"
+        ]
+    },
+    "妮姬同步器-点击前哨基地": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected": "前哨基地",
+                "roi" : [355,543,84,31]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "post_delay": 5000,
+        "next": [
+            "妮姬点击同步器",
+            "妮姬同步器-点击前哨基地"
+        ]
+    },
+        "妮姬点击同步器": {
+            "recognition": {
+                "type": "OCR",
+                "param": {
+                    "expected": "同",
+                    "roi" : [531,625,43,29]
+                }
+            },
+            "action": {
+                "type": "Click",
+                "param": {
+                    "target" : [539,613,20,16]
+                }
+            },
+            "next": [
+                "妮姬进入同步器",
+                "妮姬点击同步器"
+            ]
+    },
+    "妮姬进入同步器": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "进入",
+                "roi" : [665,616,160,104]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "妮姬同步器一键升级",
+            "妮姬进入同步器"
+        ]
+    },
+    "妮姬同步器一键升级": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "升级",
+                "roi" : [696,287,151,122]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "妮姬同步器自动选择",
+            "妮姬同步器一键升级"
+        ]
+    },
+    "妮姬同步器自动选择": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "自动",
+                "roi" : [522,594,159,125]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "妮姬同步器一键升级确认"
+        ]
+    },
+    "妮姬同步器一键升级确认": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "升级",
+                "roi" : [662,590,143,129]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "妮姬关闭同步器"
+        ]
+    },
+    "妮姬关闭同步器": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "升级",
+                "roi" : [662,590,143,129]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target" : [1003,284,46,59]
+            }
+        },
+        "next": [
+            "妮姬返回主页面"
+        ]
+    }
+}
