@@ -1,0 +1,153 @@
+{
+    "妮姬竞技场":{
+        "next":[
+        "妮姬点击竞技场",
+        "[JumpBack]妮姬方舟",
+        "[JumpBack]妮姬返回主页面"
+        ]
+    },
+    "妮姬方舟":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "方舟",
+                "roi" : [841,420,161,133]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+        ]
+    },
+    "妮姬点击竞技场":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "竞技场",
+                "roi" : [662,459,148,126]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "妮姬新人竞技场",
+            "妮姬点击竞技场"
+        ]
+    },
+    "妮姬新人竞技场":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "新人",
+                "roi" : [422,335,140,127]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "max_hit":1,
+        "next":[
+            "妮姬竞技场战斗"
+        ]
+    },
+    "妮姬特殊竞技场":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "特殊",
+                "roi" : [607,332,159,125]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "max_hit":1,
+        "next":[
+            "妮姬竞技场战斗"
+        ]
+    },
+    "妮姬竞技场战斗":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "战斗",
+                "roi" : [732,378,96,278]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "妮姬竞技场战斗无次数",
+            "妮姬竞技场战斗",
+            "妮姬竞技场进入战斗"
+        ]
+    },
+    "妮姬竞技场战斗无次数":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "通知",
+                "roi" : [585,150,137,126]
+            }
+        },
+        "action":{
+            "param":{
+                "target" : [44,673,27,17]
+            },
+            "type":"Click"
+        },
+        "repeat":3,
+        "repeat_interval":1000,
+        "post_delay":3000,
+        "timeout":5000,
+        "on_error":[
+            "妮姬返回主页面"
+        ],
+        "next":[
+            "妮姬特殊竞技场"
+        ]
+    },
+    "妮姬竞技场进入战斗":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "快速",
+                "roi" : [521,570,44,21]
+            }
+        },
+        "action":{
+            "param":{
+                "target" : [708,585,20,10]
+            },
+            "type":"Click"
+        },
+        "next":[
+            "妮姬竞技场战斗",
+            "妮姬竞技场战斗结束"
+        ]
+    },
+    "妮姬竞技场战斗结束":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected" : "点击进",
+                "roi" : [551,559,131,128]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+            "妮姬竞技场战斗"
+        ]
+    }
+}

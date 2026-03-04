@@ -237,7 +237,7 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": "大厅",
+                "expected": "大",
                 "roi" : [575,633,136,87]
             }
         },
