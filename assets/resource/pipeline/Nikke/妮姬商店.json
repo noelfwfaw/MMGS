@@ -1,0 +1,171 @@
+{
+    "妮姬商店": {
+        "next": [
+            "妮姬点击商店",
+            "[JumpBack]妮姬返回主页面"
+        ]
+    },
+    "妮姬点击商店": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "商店",
+                "roi" : [370,477,54,26]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "妮姬领取信用点",
+            "妮姬点击商店"
+        ]
+    },
+    "妮姬领取信用点": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "信用点",
+                "roi" : [92,361,72,27]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "妮姬领取信用点购买",
+            "妮姬付费商店",
+            "[JumpBack]妮姬返回主页面"
+        ]
+    },
+    "妮姬领取信用点购买": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "购买",
+                "roi" : [647,547,140,122]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "repeat":2,
+        "repeat_delay":1000,
+        "next": [
+            "妮姬领取信用点",
+            "妮姬付费商店",
+            "[JumpBack]妮姬返回主页面"
+        ]
+    },
+    "妮姬付费商店": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "商店",
+                "roi" : [381,432,37,27]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "next": [
+            "妮姬免费礼包"
+        ]
+    },
+    "妮姬免费礼包": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "礼包",
+                "roi" : [597,4,150,128]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target" : [79,150,15,17]
+            }
+        },
+        "next": [
+            "[JumpBack]妮姬每日免费礼包",
+            "[JumpBack]妮姬每周免费礼包",
+            "[JumpBack]妮姬每月免费礼包",
+            "妮姬返回主页面"
+        ]
+    },
+    "妮姬每日免费礼包": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "每日",
+                "roi" : [164,192,37,30]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+            }
+        },
+        "max_hit": 1,
+        "next": [
+            "妮姬领取每日免费礼包"
+        ]
+    },
+    "妮姬每周免费礼包": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "每周",
+                "roi" : [279,198,29,19]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+            }
+        },
+        "max_hit": 1,
+        "next": [
+            "妮姬领取每日免费礼包"
+        ]
+    },
+    "妮姬每月免费礼包": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "每月",
+                "roi" : [387,195,34,24]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+            }
+        },
+        "max_hit": 1,
+        "next": [
+            "妮姬领取每日免费礼包"
+        ]
+    },
+    "妮姬领取每日免费礼包":{
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "expected" : "免费",
+                "roi" : [0,388,154,129]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {}
+        },
+        "repeat":2,
+        "repeat_delay":1000,
+        "next": [
+        ]
+    }
+}
