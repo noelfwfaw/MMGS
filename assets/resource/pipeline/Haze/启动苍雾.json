@@ -11,6 +11,7 @@
         "focus": "[color:green]初始化[/color]",
         "next": [
             "初始状态",
+            "[JumpBack]关闭所有游戏",
             "启动苍雾",
             {
                 "name": "一键关闭后台",

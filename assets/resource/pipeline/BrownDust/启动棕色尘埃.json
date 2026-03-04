@@ -11,6 +11,7 @@
         "focus": "[color:green]启动棕色尘埃[/color]",
         "next": [
             "棕色尘埃主页面2",
+            "[JumpBack]关闭所有游戏",
             "启动棕色尘埃2",
             {
                 "name": "一键关闭后台",
