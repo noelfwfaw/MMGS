@@ -83,7 +83,8 @@
         "post_delay": 10000,
         "next": [
             "E9主页面",
-            "[JumpBack]E9关闭"
+            "[JumpBack]E9关闭",
+            "[JumpBack]大眼通用点击空屏"
         ]
     },
     "E9关闭": {
