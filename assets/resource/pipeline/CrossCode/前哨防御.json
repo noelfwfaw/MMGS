@@ -83,7 +83,7 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected": "点击领取奖励",
+                "expected": "点击",
                 "roi": [
                     82,
                     721,
