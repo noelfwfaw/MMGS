@@ -18,9 +18,9 @@
             "win32": {
                 "class_regex": ".*",
                 "window_regex": "胜利女神：新的希望",
-                "screencap": "PrintWindow",
-                "mouse": "Seize",
-                "keyboard": "Seize"
+                "screencap": "FramePool",
+                "mouse": "SendMessageWithCursorPos",
+                "keyboard": "SendMessageWithCursorPos"
             }
         }
     ],
@@ -179,31 +179,26 @@
         {
             "name": "交错启动游戏",
             "entry": "进入首页",
-            "check": true,
             "doc": "无"
         },
         {
             "name": "交错活动",
             "entry": "活动_入口",
-            "check": true,
             "doc": "[color:red]活动功能暂时只有困难最后一关，且版本更新后未必能继续使用[/color]"
         },
         {
             "name": "交错每日免费礼包",
             "entry": "Shopping",
-            "check": true,
             "doc": "无"
         },
         {
             "name": "交错限时贸易所购买",
             "entry": "Time-limited Shopping",
-            "check": true,
             "doc": "无"
         },
         {
             "name": "交错模拟军演",
             "entry": "模拟军演",
-            "check": true,
             "doc": "无",
             "option": [
                 "刷新战力阈值"
@@ -247,13 +242,11 @@
         {
             "name": "交错领取奖励(邮箱+每日+通行证)",
             "entry": "Awards",
-            "check": true,
             "doc": "无"
         },
         {
             "name": "交错历战试炼",
             "entry": "历战试炼",
-            "check": true,
             "doc": "测试中,暂时仅支持打限时boss，任务目标达到10为高进度，将不会继续任务；[color:red]开启该任务需自行配置有足够强度的队伍[/color]",
             "pipeline_override": {
                 "活动选择": {
@@ -360,6 +353,7 @@
     ],
     "option": {
         "核心选项": {
+            "type": "select",
             "cases": [
                 {
                     "name": "生命核心",
@@ -384,6 +378,7 @@
             ]
         },
         "活动选项": {
+            "type": "select",
             "cases": [
                 {
                     "name": "情书夺还战",
@@ -398,6 +393,7 @@
             ]
         },
         "星期一": {
+            "type": "select",
             "cases": [
                 {
                     "name": "活动",
@@ -427,6 +423,7 @@
             ]
         },
         "星期二": {
+            "type": "select",
             "cases": [
                 {
                     "name": "活动",
@@ -456,6 +453,7 @@
             ]
         },
         "星期三": {
+            "type": "select",
             "cases": [
                 {
                     "name": "活动",
@@ -500,6 +498,7 @@
             ]
         },
         "星期四": {
+            "type": "select",
             "cases": [
                 {
                     "name": "活动",
@@ -529,6 +528,7 @@
             ]
         },
         "星期五": {
+            "type": "select",
             "cases": [
                 {
                     "name": "活动",
@@ -558,6 +558,7 @@
             ]
         },
         "星期六": {
+            "type": "select",
             "cases": [
                 {
                     "name": "活动",
@@ -587,6 +588,7 @@
             ]
         },
         "星期日": {
+            "type": "select",
             "cases": [
                 {
                     "name": "活动",
@@ -616,6 +618,7 @@
             ]
         },
         "圣石选择": {
+            "type": "select",
             "cases": [
                 {
                     "name": "火属性",
@@ -665,6 +668,7 @@
             ]
         },
         "作战关卡": {
+            "type": "select",
             "cases": [
                 {
                     "name": "技能书",
@@ -839,6 +843,7 @@
             ]
         },
         "是否访问每个好友换抽": {
+            "type": "select",
             "cases": [
                 {
                     "name": "Yes",
@@ -859,6 +864,7 @@
             ]
         },
         "是否打挑战难度": {
+            "type": "select",
             "cases": [
                 {
                     "name": "Yes",
@@ -879,6 +885,7 @@
             ]
         },
         "挑战难度选择": {
+            "type": "select",
             "cases": [
                 {
                     "name": "1",
@@ -923,6 +930,7 @@
             ]
         },
         "关卡选择": {
+            "type": "select",
             "cases": [
                 {
                     "name": "技能磨砺（1-4层）",
@@ -1004,6 +1012,7 @@
             ]
         },
         "第几层": {
+            "type": "select",
             "cases": [
                 {
                     "name": "第1层",
@@ -1050,337 +1059,6 @@
                     "pipeline_override": {
                         "交错探索选择层数": {
                             "expected": "第6层"
-                        }
-                    }
-                }
-            ]
-        },
-        "手动次数": {
-            "cases": [
-                {
-                    "name": "1次",
-                    "pipeline_override": {
-                        "自选-次数1": {
-                            "enabled": true,
-                            "next": [
-                                "开启加成",
-                                "扫荡成功"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "2次",
-                    "pipeline_override": {
-                        "自选-次数2": {
-                            "enabled": true,
-                            "next": [
-                                "开始战斗"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "3次",
-                    "pipeline_override": {
-                        "自选-次数2": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数3"
-                            ]
-                        },
-                        "自选-次数3": {
-                            "enabled": true,
-                            "next": [
-                                "开始战斗"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "4次",
-                    "pipeline_override": {
-                        "自选-次数2": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数3"
-                            ]
-                        },
-                        "自选-次数3": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数4"
-                            ]
-                        },
-                        "自选-次数4": {
-                            "enabled": true,
-                            "next": [
-                                "开始战斗"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "5次",
-                    "pipeline_override": {
-                        "自选-次数2": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数3"
-                            ]
-                        },
-                        "自选-次数3": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数4"
-                            ]
-                        },
-                        "自选-次数4": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数5"
-                            ]
-                        },
-                        "自选-次数5": {
-                            "enabled": true,
-                            "next": [
-                                "开始战斗"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "6次",
-                    "pipeline_override": {
-                        "自选-次数2": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数3"
-                            ]
-                        },
-                        "自选-次数3": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数4"
-                            ]
-                        },
-                        "自选-次数4": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数5"
-                            ]
-                        },
-                        "自选-次数5": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数6"
-                            ]
-                        },
-                        "自选-次数6": {
-                            "enabled": true,
-                            "next": [
-                                "开始战斗"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "7次",
-                    "pipeline_override": {
-                        "自选-次数2": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数3"
-                            ]
-                        },
-                        "自选-次数3": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数4"
-                            ]
-                        },
-                        "自选-次数4": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数5"
-                            ]
-                        },
-                        "自选-次数5": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数6"
-                            ]
-                        },
-                        "自选-次数6": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数7"
-                            ]
-                        },
-                        "自选-次数7": {
-                            "enabled": true,
-                            "next": [
-                                "开始战斗"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "8次",
-                    "pipeline_override": {
-                        "自选-次数2": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数3"
-                            ]
-                        },
-                        "自选-次数3": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数4"
-                            ]
-                        },
-                        "自选-次数4": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数5"
-                            ]
-                        },
-                        "自选-次数5": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数6"
-                            ]
-                        },
-                        "自选-次数6": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数7"
-                            ]
-                        },
-                        "自选-次数7": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数8"
-                            ]
-                        },
-                        "自选-次数8": {
-                            "enabled": true,
-                            "next": [
-                                "开始战斗"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "9次",
-                    "pipeline_override": {
-                        "自选-次数2": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数3"
-                            ]
-                        },
-                        "自选-次数3": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数4"
-                            ]
-                        },
-                        "自选-次数4": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数5"
-                            ]
-                        },
-                        "自选-次数5": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数6"
-                            ]
-                        },
-                        "自选-次数6": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数7"
-                            ]
-                        },
-                        "自选-次数7": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数8"
-                            ]
-                        },
-                        "自选-次数8": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数9"
-                            ]
-                        },
-                        "自选-次数9": {
-                            "enabled": true,
-                            "next": [
-                                "开始战斗"
-                            ]
-                        }
-                    }
-                },
-                {
-                    "name": "10次",
-                    "pipeline_override": {
-                        "自选-次数2": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数3"
-                            ]
-                        },
-                        "自选-次数3": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数4"
-                            ]
-                        },
-                        "自选-次数4": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数5"
-                            ]
-                        },
-                        "自选-次数5": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数6"
-                            ]
-                        },
-                        "自选-次数6": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数7"
-                            ]
-                        },
-                        "自选-次数7": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数8"
-                            ]
-                        },
-                        "自选-次数8": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数9"
-                            ]
-                        },
-                        "自选-次数9": {
-                            "enabled": true,
-                            "next": [
-                                "自选-次数10"
-                            ]
-                        },
-                        "自选-次数10": {
-                            "enabled": true,
-                            "next": [
-                                "开始战斗"
-                            ]
                         }
                     }
                 }
