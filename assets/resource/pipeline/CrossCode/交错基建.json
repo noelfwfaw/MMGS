@@ -338,9 +338,9 @@
                     603
                 ],
                 "template": [
-                    "InfrastructureS/构建订单3.png",
-                    "InfrastructureS/构建订单1.png",
-                    "InfrastructureS/构建订单4.png"
+                    "Infrastructures/构建订单3.png",
+                    "Infrastructures/构建订单1.png",
+                    "Infrastructures/构建订单4.png"
                 ],
                 "threshold": 0.9
             },
@@ -379,7 +379,7 @@
                     909,
                     603
                 ],
-                "template": "InfrastructureS/星币120000.png",
+                "template": "Infrastructures/星币120000.png",
                 "threshold": 0.95
             },
             "type": "TemplateMatch"
@@ -417,7 +417,7 @@
                     909,
                     603
                 ],
-                "template": "InfrastructureS/经验120000.png",
+                "template": "Infrastructures/经验120000.png",
                 "threshold": 0.95
             },
             "type": "TemplateMatch"
@@ -524,7 +524,7 @@
                     902,
                     595
                 ],
-                "template": "InfrastructureS/资源短缺1.png",
+                "template": "Infrastructures/资源短缺1.png",
                 "green_mask": true,
                 "threshold": 0.9
             }
@@ -546,7 +546,7 @@
                     187,
                     181
                 ],
-                "template": "InfrastructureS/稀有黑匣.png"
+                "template": "Infrastructures/稀有黑匣.png"
             }
         },
         "action": {
@@ -566,7 +566,7 @@
                     243,
                     226
                 ],
-                "template": "InfrastructureS/压电石英.png"
+                "template": "Infrastructures/压电石英.png"
             }
         },
         "action": {
@@ -613,7 +613,7 @@
                     239,
                     219
                 ],
-                "template": "InfrastructureS/熔融石英.png"
+                "template": "Infrastructures/熔融石英.png"
             }
         },
         "action": {
@@ -1785,7 +1785,7 @@
                     104
                 ],
                 "template": [
-                    "InfrastructureS/Infr_JDSC.png"
+                    "Infrastructures/Infr_JDSC.png"
                 ]
             },
             "type": "TemplateMatch"
@@ -2356,7 +2356,7 @@
                     104
                 ],
                 "template": [
-                    "InfrastructureS/Infr_JDSC.png"
+                    "Infrastructures/Infr_JDSC.png"
                 ]
             },
             "type": "TemplateMatch"
