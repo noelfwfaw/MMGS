@@ -26,8 +26,8 @@
         "recognition": {
             "type": "OCR",
             "param": {
-                "expected" : "信用点",
-                "roi" : [92,361,72,27]
+                "expected" : "0",
+                "roi" : [134,494,12,16]
             }
         },
         "action": {
