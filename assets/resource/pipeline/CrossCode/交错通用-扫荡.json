@@ -117,7 +117,10 @@
             }
         },
         "action":{
-            "type":"Click"
+            "type":"Click",
+            "param":{
+                "target" :[147,0,147,140]
+            }
         },
         "next":[
             "交错返回主页面"
