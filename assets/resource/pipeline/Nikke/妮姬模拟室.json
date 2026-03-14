@@ -1,0 +1,27 @@
+{
+    "妮姬模拟室":{
+        "next":[
+        "妮姬点击模拟室",
+        "[JumpBack]妮姬方舟",
+        "[JumpBack]妮姬返回主页面"
+        ]
+    },
+    "妮姬点击模拟室":{
+        "recognition":{
+            "type":"OCR",
+            "param":{
+                "expected":"模拟室",
+                "roi":[67,203,1149,454]
+            }
+        },
+        "action":{
+            "param":{},
+            "type":"Click"
+        },
+        "next":[
+        "妮姬模拟室",
+        "[JumpBack]妮姬方舟",
+        "[JumpBack]妮姬返回主页面"
+        ]
+    }
+}
