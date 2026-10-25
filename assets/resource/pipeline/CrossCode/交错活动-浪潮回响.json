@@ -563,14 +563,7 @@
     },
     "活动_领取奖励2": {
         "action": {
-            "param": {
-                "target": [
-                    46,
-                    30,
-                    117,
-                    38
-                ]
-            },
+            "param": {},
             "type": "DoNothing"
         },
         "focus": "[color:green]活动_领取奖励2[/color]",

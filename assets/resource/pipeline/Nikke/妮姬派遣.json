@@ -101,7 +101,7 @@
         "action": {
             "type": "Click",
             "param": {
-                "roi" : [926,374,28,30]
+                "target" : [926,374,28,30]
             }
         },
         "next": [

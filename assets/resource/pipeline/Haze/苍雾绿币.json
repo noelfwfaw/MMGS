@@ -40,12 +40,7 @@
         },
         "post_wait_freezes": 2000,
         "focus": "[color:green]点击支援角色[/color]",
-        "recommended roi": [
-            25,
-            368,
-            126,
-            51
-        ],
+        // "recommended roi": [25, 368, 126, 51],  // 非标准字段（原不生效），保留作参考
         "next": [
             "绿币领取"
         ]

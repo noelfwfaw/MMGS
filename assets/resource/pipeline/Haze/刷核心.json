@@ -661,12 +661,7 @@
         },
         "post_wait_freezes": 40000,
         "focus": "[color:green]核心开始扫荡[/color]",
-        "recommended roi": [
-            505,
-            514,
-            248,
-            53
-        ],
+        // "recommended roi": [505, 514, 248, 53],  // 非标准字段（原不生效），保留作参考
         "next": [
             "核心扫荡确认",
             "初始状态",

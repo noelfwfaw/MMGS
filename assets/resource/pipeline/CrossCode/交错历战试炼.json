@@ -262,14 +262,7 @@
     },
     "历战试炼-boss挑战难度-选择-右滑": {
         "action": {
-            "param": {
-                "target": [
-                    1080,
-                    503,
-                    43,
-                    52
-                ]
-            },
+            "param": {},
             "type": "DoNothing"
         },
         "focus": "[color:green]右滑[/color]",
