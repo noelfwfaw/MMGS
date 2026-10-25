@@ -10,7 +10,7 @@
 </div>
 
 基于 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 所创建的个人向多游戏脚本
-#### 主打上线收菜，功能不会太多
+#### 主打上线收菜，功能不会太多，维不维护看我有没有在玩那款游戏
 
 > **MaaFramework** 是基于图像识别技术、运用 [MAA](https://github.com/MaaAssistantArknights/MaaAssistantArknights) 开发经验去芜存菁、完全重写的新一代自动化黑盒测试框架。
 > 低代码的同时仍拥有高扩展性，旨在打造一款丰富、领先、且实用的开源库，助力开发者轻松编写出更好的黑盒测试程序，并推广普及。
