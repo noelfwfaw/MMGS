@@ -1,10 +1,12 @@
+import json
+import subprocess
+import re
+from datetime import datetime, date
+
 from maa.agent.agent_server import AgentServer
 from maa.custom_action import CustomAction
 from maa.context import Context
-import subprocess
-import re
-from datetime import datetime,date
-import json
+
 
 @AgentServer.custom_action("GetWeekPlan")
 class ActionTime(CustomAction):
@@ -100,3 +102,25 @@ class KillAllApps(CustomAction):
         print(f"[DONE] 已成功关闭 {success_count}/{len(packages)} 个应用")
         return CustomAction.RunResult(success=True)
 
+
+@AgentServer.custom_action("click_target")
+class ClickTargetAction(CustomAction):
+    def run(
+        self,
+        context: Context,
+        argv: CustomAction.RunArg,
+    ) -> bool:
+
+        print("ClickTargetAction is running!")
+
+        param = json.loads(argv.custom_action_param or "{}") or {}
+        target = param.get("target")
+        if not isinstance(target, list) or len(target) != 2:
+            return False
+
+        # 执行点击
+        click_job = context.tasker.controller.post_click(target[0], target[1])
+        # 等待点击完成，这一步必须有！
+        click_job.wait()
+
+        return True
